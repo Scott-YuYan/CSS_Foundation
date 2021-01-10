@@ -1,0 +1,35 @@
+.flexParent{
+    display: flex;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.flexClass{
+    border: 1px solid black;
+    width: 100px;
+    background: hsl(0, 80%, 50%);
+    flex-grow: 1;
+}
+
+.flexClass:first-child{
+    order: 5;
+    height: 100px;
+    flex-shrink: 100;
+    align-self: flex-end;
+}
+.flexClass:nth-child(2){
+    height: 150px;
+    order: 4;
+}
+.flexClass:nth-child(3){
+    height: 200px;
+    order: 3;
+}
+.flexClass:nth-child(4){
+    order: 2;
+    height: 50px;
+}
+.flexClass:last-child{
+    order: 1;
+    height: 50px;
+}
